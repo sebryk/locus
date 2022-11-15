@@ -1,165 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Port+Lligat+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Locus</title>
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <!-- Header Nav -->
-            <nav class="nav">
-                <a href="#!" class="nav-logo"><img class="nav-logo-img" src="images/header/logo.png" alt="logo"> Locus</a>
-                <ul class="nav-list">
-                    <li class="nav-list-item active"><a href="">Home</a></li>
-                    <li class="nav-list-item"><a href="">Contact</a></li>
-                    <li class="nav-list-item"><a href="">Location</a></li>
-                    <li class="nav-list-item"><a href="">About Us</a></li>
-                </ul>
-                <button class="nav-btn">Sign Up</button>
-            </nav>
-            <!-- Header Content -->
-            <div class="header-row">
-                <div class="header-content">
-                    <h1>
-                        Get the inspiration of interior design here
-                    </h1>
-                    <p>
-                        architecture not only about engineering, it even 
-                        lands to art and aesthetics. With us, you will get 
-                        a residentical design with an extraordinary touch 
-                        of art.
-                    </p>
-                    <button class="header-content-btn">Let's go</button>
-                </div class="header-img">
-                    <img class="header-main-img" src="images/header/hero-img.png" alt="Interior accessories">
-                </div>
-            </div>
+  </head>
+  <body>
+    <!-- ------------------------------- Header -------------------------------- -->
+    <header class="header" id="header">
+      <div class="container">
+        <!-- -------------------------- Header Navigation -------------------------- -->
+        <div class="header__nav">
+          <nav class="header__menu menu">
+            <a class="menu__logo logo" href="#!">
+              <img class="logo__img" src="images/header/logo.svg" alt="logo" />
+              <div class="logo__text">Locus</div>
+            </a>
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__link" href="#header">Home</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#about">About</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#projects">Projects</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#contact">Contact</a>
+              </li>
+              <li class="menu__list-item">
+                <button class="menu__btn menu__btn-burger">Sign Up</button>
+              </li>
+            </ul>
+            <button class="menu__btn">Sign Up</button>
+          </nav>
+          <div class="header__menu-icon icon">
+            <span class="icon__stripe"></span>
+            <span class="icon__stripe"></span>
+            <span class="icon__stripe"></span>
+          </div>
         </div>
+        <!-- -------------------------- Header Content -------------------------- -->
+        <div class="header__row">
+          <div class="header__content">
+            <h1 class="header__title">
+              Get the inspiration of interior design here
+            </h1>
+            <p class="header__text">
+              Architecture not only about engineering, it even lands to art and
+              aesthetics. With us, you will get a residentical design with an
+              extraordinary touch of art.
+            </p>
+            <a class="header__btn" href="#projects">Let's go</a>
+          </div>
+          <img
+            class="header__img"
+            src="images/header/hero-img.png"
+            alt="Interior accessories"
+          />
+        </div>
+      </div>
     </header>
-    <!-- Services section -->
-    <section class="services">
-        <div class="container">
-            <!-- Services heading and video link -->
-            <div class="services-heading">
-                <h2>How it works</h2>
-                <p>Spice up your space even simpler <br>than you think<br></p>
-            </div>
-            <div class="services-link">
-                <div class="services-link-img">
-                    <img src="images/about/img2.png" alt="Room with interior items">
-                </div>
-                <div class="services-link-text">
-                    <p>We provide design and build for commercial building, interior and furniture to improve the better life.</p>
-                    <a href="#!" class="services-link-video">See video</a>
-                </div>
-            </div>
-            <!-- Services text and image content -->
-            <div class="services-content">
-                <div class="services-content-img">
-                    <img src="images/about/img3.png" alt="">
-                </div>
-                <div class="services-content-text">
-                    <h3>Our mission is to deliver aesthetic visual for your home</h3>
-                    <p>By applying bacis psychology principles, we are going to explain how perception works and how we can use this understanding to maximise the space that we occupy in our homes.</p>
-                </div>
-            </div>
+    <!-- ---------------------------- About section ---------------------------- -->
+    <section class="about" id="about">
+      <div class="container">
+        <!-- ---------------- About section heading and video link ----------------- -->
+        <div class="about__heading">
+          <h2 class="about__title">How it works</h2>
+          <p class="about__text">
+            Spice up your space even simpler <br />than you think<br />
+          </p>
         </div>
-    </section>
-    <!-- Projects section -->
-    <section class="projects">
-        <div class="container">
-            <div class="projects-heading">
-                <h2>Our project </h2>
-                <p>Introducing our first official project</p>
-                <hr><hr>
-            </div>
-            <!-- Projects cards -->
-            <div class="projects-row">
-                <div class="projects-card">
-                    <h4>Project Livingroom</h4>
-                    <p>A simple guide to create the perfect livingroom for. Night Watc works beautifully in a wide gamut of arrangements.</p>
-                    <img src="images/projects/pr-img-1.png" alt="Room with interior items">
-                </div>
-                <div class="projects-card">
-                    <img src="images/projects/pr-img-2.png" alt="Room with interior items">
-                    <h4>Project workspace</h4>
-                    <p>A simple guide to create the perfect livingroom for. Night Watc works beautifully in a wide gamut of arrangements.</p>
-                </div>
-                <div class="projects-card">
-                    <h4>Library</h4>
-                    <p>A simple guide to create the perfect livingroom for. Night Watc works beautifully in a wide gamut of arrangements.</p>
-                    <img src="images/projects/pr-img-3.png" alt="Room with interior items">
-                </div>
-            </div>
+        <div class="about__link link">
+          <img
+            class="link__img"
+            src="images/about/img2.png"
+            alt="Room with interior items"
+          />
+          <div class="link__wrap">
+            <p class="link__text">
+              We provide design and build for commercial building, interior and
+              furniture to improve the better life.
+            </p>
+            <a
+              class="link__video"
+              href="https://youtu.be/BJeg2Kta2wY"
+              target="_blank"
+              >See&nbsp;video</a
+            >
+          </div>
         </div>
+        <!-- ---------------- About section content text and image ----------------- -->
+        <div class="about__content content">
+          <img class="content__img" src="images/about/img3.png" alt="" />
+          <div class="content__text">
+            <h3 class="content__title">
+              Our mission is to deliver aesthetic visual for your home
+            </h3>
+            <p class="content__desc">
+              By applying bacis psychology principles, we are going to explain
+              how perception works and how we can use this understanding to
+              maximise the space that we occupy in our homes.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Testimonial section -->
+    <!-- -------------------------- Projects section --------------------------- -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="projects__heading">
+          <h2 class="projects__title">Our project</h2>
+          <p class="projects__subtitle">
+            Introducing our first official project
+          </p>
+          <hr class="projects__divider" />
+          <hr class="projects__divider" />
+        </div>
+        <!-- --------------------------- Projects cards ---------------------------- -->
+        <div class="projects__card card">
+          <div class="card__content">
+            <div class="card__text-wrap">
+              <h4 class="card__title">Project Livingroom</h4>
+              <p class="card__text">
+                A simple guide to create the perfect livingroom for. Night Watc
+                works beautifully in a wide gamut of arrangements.
+              </p>
+            </div>
+            <img
+              class="card__img"
+              src="images/projects/pr-img-1.png"
+              alt="Room with interior items"
+            />
+          </div>
+          <div class="card__content card__content--reverse">
+            <img
+              class="card__img"
+              src="images/projects/pr-img-2.png"
+              alt="Room with interior items"
+            />
+            <div class="card__text-wrap">
+              <h4 class="card__title card__title--reverse">
+                Project workspace
+              </h4>
+              <p class="card__text">
+                A simple guide to create the perfect livingroom for. Night Watc
+                works beautifully in a wide gamut of arrangements.
+              </p>
+            </div>
+          </div>
+          <div class="card__content">
+            <div class="card__text-wrap">
+              <h4 class="card__title">Library</h4>
+              <p class="card__text">
+                A simple guide to create the perfect livingroom for. Night Watc
+                works beautifully in a wide gamut of arrangements.
+              </p>
+            </div>
+            <img
+              class="card__img"
+              src="images/projects/pr-img-3.png"
+              alt="Room with interior items"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------- Testimonial section ------------------------- -->
     <section class="testimonial">
-        <div class="container">
-            <div class="testimonial-heading">
-                <h2>Testimonial</h2>
-            </div>
-            <div class="testimonial-clients">
-                <img src="images/clients/cl-icone-3.png" alt="K.L.A.M.B.Y logo">
-                <img src="images/clients/cl-icone-2.png" alt="Mayoutfit logo">
-                <img src="images/clients/cl-icone-1.png" alt="Zalora logo">
-                <img src="images/clients/cl-icone-4.png" alt="Geulis logo">
-            </div>
-            <div class="testimonial-content">
-                <div class="testimonial-content-img">
-                    <img src="images/testimonial/img7.png" alt="Girl sitting in the room with white interior items">
-                </div>
-                <div class="testimonial-content-text">
-                    <div class="testim-headings-row">
-                        <div class="heading-card">
-                            <h4>105</h4>
-                            <p>project<br>done</p>
-                        </div>
-                        <div class="heading-card">
-                            <h4>12</h4>
-                            <p>years of<br>experience</p>
-                        </div>
-                        <div class="heading-card">
-                            <h4>10+</h4>
-                            <p>big company<br>partnership</p>
-                        </div>
-                    </div>
-                    <p class="colon">"Not able to tell you how happy I am with interior design. Interior design has completely surpassed our expectations. Interior design saved my business. Interior design is worth much more than I paid."<br><span>- Roscoe</span></p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="testimonial__heading">Testimonial</h2>
+        <div class="testimonial__clients">
+          <img
+            class="testimonial__icon testimonial__icon-1"
+            src="images/testimonial/clients/cl-icon-3.svg"
+            alt="K.L.A.M.B.Y logo"
+          />
+          <img
+            class="testimonial__icon testimonial__icon-2"
+            src="images/testimonial/clients/cl-icon-2.svg"
+            alt="Mayoutfit logo"
+          />
+          <img
+            class="testimonial__icon testimonial__icon-3"
+            src="images/testimonial/clients/cl-icon-1.svg"
+            alt="Zalora logo"
+          />
+          <img
+            class="testimonial__icon testimonial__icon-4"
+            src="images/testimonial/clients/cl-icon-4.svg"
+            alt="Geulis logo"
+          />
         </div>
+        <div class="testimonial__wrap">
+          <img
+            class="testimonial__img"
+            src="images/testimonial/img7.png"
+            alt="Girl sitting in the room with white interior items"
+          />
+          <div class="testimonial__content">
+            <div class="testimonial__title title">
+              <div class="title__content">
+                <h4 class="title__content-number">105</h4>
+                <p class="title__content-text">project<br />done</p>
+              </div>
+              <div class="title__content">
+                <h4 class="title__content-number">12</h4>
+                <p class="title__content-text">years of<br />experience</p>
+              </div>
+              <div class="title__content">
+                <h4 class="title__content-number">10+</h4>
+                <p class="title__content-text">big company<br />partnership</p>
+              </div>
+            </div>
+            <p class="testimonial__content-desc">
+              "Not able to tell you how happy I am with interior design.
+              Interior design has completely surpassed our expectations.
+              Interior design saved my business. Interior design is worth much
+              more than I paid."<br /><span class="testimonial__content-name"
+                >- Roscoe</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Footer contact form -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-contact">
-                <div class="footer-contact-heading">
-                    <h2>Contact Us</h2>
-                    <p>Have any questions? Want help <br>before getting started?</p> 
-                    <hr><hr>
-                </div>
-                <div class="footer-contact-form">
-                    <form>
-                        <label for="fname">Full name</label>
-                        <input type="text" id="fname">
-                        <label for="email">Email address</label>
-                        <input type="email" id="email">
-                        <label for="description">Description</label>
-                        <input type="text" id="description">
-                        <button type="reset">Send now</button>
-                    </form>
-                </div>
-            </div>    
-        </div>    
+    <!-- ------------------------- Footer contact form ------------------------- -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__contact">
+          <div class="footer__content">
+            <h2 class="footer__title">Contact Us</h2>
+            <p class="footer__text">
+              Have any questions? Want help before getting started?
+            </p>
+            <hr class="footer__divider" />
+            <hr class="footer__divider" />
+          </div>
+          <div class="footer__form form">
+            <form>
+              <input
+                class="form__input form__input--name"
+                type="text"
+                required
+                id="fname"
+                autocomplete="off"
+              />
+              <label class="form__label form__label--name" for="fname"
+                >Full name</label
+              >
+              <input
+                class="form__input form__input--email"
+                type="text"
+                required
+                id="email"
+                autocomplete="off"
+              />
+              <label class="form__label form__label--email" for="email"
+                >Email address</label
+              >
+              <input
+                class="form__input form__input--text"
+                type="text"
+                required
+                id="description"
+                autocomplete="off"
+              />
+              <label class="form__label form__label--text" for="description"
+                >Description</label
+              >
+              <button class="form__btn" type="reset">Send now</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+    <script src="javascript/index.js"></script>
+  </body>
 </html>
-
