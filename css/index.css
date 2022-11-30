@@ -515,8 +515,6 @@
 }
 
 .form__input {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
   border: none;
   border-bottom: #404242 1px solid;
   border-radius: 0;
@@ -652,6 +650,16 @@
   .menu__btn-burger {
     display: block;
     margin-top: 40px;
+    width: 194px;
+    height: 57px;
+    border: none;
+    background-color: #58a9a5;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
   }
 
   .header__menu-icon {
