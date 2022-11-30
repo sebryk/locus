@@ -648,8 +648,8 @@
   }
 
   .menu__btn-burger {
-    display: block;
-    margin-top: 40px;
+    display: inline-block;
+/*     margin-top: 40px; */
     width: 194px;
     height: 57px;
     border: none;
