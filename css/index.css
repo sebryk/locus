@@ -11,6 +11,306 @@
   scroll-behavior: smooth;
 }
 
+/* ------------- Stop Resizing At 320px And Horizontal Scrolling ------------ */
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #ccf0e6;
+}
+
+.body__lock {
+  overflow-y: hidden;
+}
+
+/* -------------------------- Modal Sign In Window -------------------------- */
+
+.modal-signin {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transform: scale(0);
+  overflow: scroll;
+  scroll-padding-top: 60px;
+}
+
+.modal-signin--active {
+  transform: scale(1);
+}
+
+.modal-signin__close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.6);
+  z-index: 20;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-signin__close:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.modal-signin__wrap {
+  position: relative;
+  margin: auto;
+  width: 450px;
+  margin: auto;
+  background-color: white;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.modal-signin__content {
+  text-align: center;
+  padding: 40px 40px 0 40px;
+  margin-bottom: 60px;
+}
+
+.modal-signin__title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.modal-signin__text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.signin-form {
+  padding: 0 40px;
+}
+
+.signin-form__input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  border: rgba(0, 0, 0, 0.2) 1.2px solid;
+  font-size: 16px;
+  font-weight: 400px;
+  padding-left: 10px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.signin-form__input:focus {
+  border: rgba(60, 153, 147, 0.7) 1.5px solid;
+}
+
+.signin-form__input--email {
+  margin-bottom: 30px;
+}
+
+.signin-form__label {
+  display: block;
+  transform: translateY(-110px);
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.signin-form__lable--password {
+  transform: translateY(-80px);
+}
+
+.signin-form__checkbox {
+  display: none;
+}
+
+.signin-form__checkbox-label {
+  margin-bottom: 30px;
+}
+
+.signin-form__checkbox-label::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-2px);
+  vertical-align: middle;
+  border: rgba(0, 0, 0, 0.2) 1.4px solid;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.signin-form__checkbox:checked + .signin-form__checkbox-label::before {
+  border-color: #58a9a5;
+  background: url('/images/sign_in/checked.svg') no-repeat center;
+  background-color: #58a9a5;
+  background-size: 12px 12px;
+}
+
+.signin__btn {
+  width: 100%;
+  height: 57px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #58a9a5;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signin__btn:hover {
+  background-color: #3d9f98;
+}
+
+.signin__btn:active {
+  background-color: #276864;
+}
+
+.modal-signin__link {
+  padding-left: 40px;
+  margin-bottom: 40px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-signin__link-text {
+  color: #3c9993;
+  transition: 0.3s;
+}
+
+.modal-signin__link-text:hover {
+  color: #276864;
+}
+
+/* -------------------------- Sign Up Modal Window -------------------------- */
+
+.modal-signup__close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.6);
+  z-index: 20;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-signup__close:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.modal-signup__wrap {
+  position: relative;
+  margin: auto;
+  width: 450px;
+  background-color: white;
+  z-index: 2;
+  border-radius: 5px;
+  display: none;
+}
+
+.modal-signup__content {
+  text-align: center;
+  padding: 40px 40px 0 40px;
+  margin-bottom: 60px;
+}
+
+.modal-signup__title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.modal-signup__text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.signup-form {
+  padding: 0 40px;
+}
+
+.signup-form__input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  border: rgba(0, 0, 0, 0.2) 1.2px solid;
+  font-size: 16px;
+  font-weight: 400px;
+  padding-left: 10px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.signup-form__input:focus {
+  border: rgba(60, 153, 147, 0.7) 1.5px solid;
+}
+
+.signup-form__input--email {
+  margin-bottom: 30px;
+}
+
+.signup-form__label {
+  display: block;
+  transform: translateY(-110px);
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.signup-form__lable--password {
+  transform: translateY(-80px);
+}
+
+.signup-form__lable--login {
+  transform: translateY(-80px);
+  margin-bottom: 30px;
+}
+
+.signup__btn {
+  width: 100%;
+  height: 57px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #58a9a5;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup__btn:hover {
+  background-color: #3d9f98;
+}
+
+.signup__btn:active {
+  background-color: #276864;
+}
+
+.modal-signup__link {
+  padding-left: 40px;
+  margin-bottom: 40px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-signup__link-text {
+  color: #3c9993;
+  transition: 0.3s;
+}
+
+.modal-signup__link-text:hover {
+  color: #276864;
+}
+
 /* ---------------------------- Header --------------------------- */
 
 .header {
@@ -59,12 +359,16 @@
 .menu__list-item {
   position: relative;
   display: inline;
-  margin: 0 36px;
   font-size: 18px;
   color: #404242;
   font-weight: 400;
   font-weight: 400;
   transition: 0.3s ease-in-out;
+  margin: 0 36px;
+}
+
+.menu__list-btn {
+  display: inline;
 }
 
 .menu__list-item::after {
@@ -93,6 +397,8 @@
 }
 
 .menu__btn {
+  display: inline-block;
+  margin-left: 100px;
   width: 194px;
   height: 57px;
   border: none;
@@ -100,6 +406,8 @@
   border-radius: 12px;
   font-size: 18px;
   font-weight: 400;
+  line-height: 57px;
+  text-align: center;
   color: #ffffff;
   cursor: pointer;
   transition: 0.3s;
@@ -111,10 +419,6 @@
 
 .menu__btn:active {
   background-color: #276864;
-}
-
-.menu__btn-burger {
-  display: none;
 }
 
 /* ------------------------------- Burger Menu ------------------------------ */
@@ -154,7 +458,6 @@
 }
 
 .header__content {
-  /* margin-top: 136px; */
   width: 443px;
 }
 
@@ -413,8 +716,6 @@
 
 .testimonial__wrap {
   display: flex;
-  /* height: auto; */
-  /* width: 100%; */
 }
 
 .testimonial__content {
@@ -610,7 +911,7 @@
     justify-content: space-between;
   }
   .menu__list {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: -100%;
     height: 100vh;
@@ -631,10 +932,6 @@
     right: 0;
   }
 
-  .body__lock {
-    overflow: hidden;
-  }
-
   .menu__list-item {
     line-height: 130px;
     font-size: 30px;
@@ -646,22 +943,8 @@
   }
 
   .menu__btn {
-    display: none;
-  }
-
-  .menu__btn-burger {
-    display: inline-block;
-    /* margin-top: 40px; */
-    width: 194px;
-    height: 57px;
-    border: none;
-    background-color: #58a9a5;
-    border-radius: 12px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #ffffff;
-    cursor: pointer;
-    transition: 0.3s;
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   .header__menu-icon {
