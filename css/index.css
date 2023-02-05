@@ -145,7 +145,7 @@ body {
 
 .signin-form__checkbox:checked + .signin-form__checkbox-label::before {
   border-color: #58a9a5;
-  background: url('./images/sign_in/checked.svg') no-repeat center;
+  background: url('../images/sign_in/checked.svg') no-repeat center;
   background-color: #58a9a5;
   background-size: 12px 12px;
 }
