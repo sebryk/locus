@@ -29,6 +29,7 @@ body {
 
 .body__lock {
   overflow-y: hidden;
+  position: fixed;
 }
 
 /* -------------------------- Modal Sign In Window -------------------------- */
