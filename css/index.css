@@ -13,10 +13,6 @@
 
 /* ------------- Stop Resizing At 320px And Horizontal Scrolling ------------ */
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   position: relative;
   min-width: 320px;
